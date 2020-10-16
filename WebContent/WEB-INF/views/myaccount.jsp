@@ -7,6 +7,7 @@
 <title>My Account</title>
 </head>
 <body>
+    <p>Welcome ${user.firstName} ${user.lastName}</p>
     <a href="insertgpspath">INSERT GPS PATH</a><br>
     <a href="registergpspath">REGISTER GPS PATH</a><br>
 </body>
