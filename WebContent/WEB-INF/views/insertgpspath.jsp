@@ -21,13 +21,13 @@
 </head>
 <body>
 		<h3>Please fill in the form suggested below</h3>
-		<form action="./login" method="POST" autocomplete="off">
-			Transport&nbsp;<input type="text" name="transport" value="" placeholder="Car, bike, ..."/><br/>
+		<form action="./insertgpspath" method="POST" autocomplete="off">
+			Transport&nbsp;<input type="number" name="transport" value="" placeholder="Car, bike, ..."/><br/>
 			Start&nbsp;<input type="text" name="start" value="" placeholder="[lat:long]"/><br/>
 			Start time&nbsp;<input type="datetime" name="startDateTime" value=""/><br/>
 			Finish&nbsp;<input type="text" name="finish" value="" placeholder="[lat:long]"/><br/>
 			Finish time&nbsp;<input type="datetime" name="finishDateTime" value=""/><br/>
-			Full route&nbsp;<input type="text" name="fullroute" value="" placeholder="c:/user/fullroute.txt"/><br/>
+			Full route&nbsp;<input type="text" name="fullRoute" value=""/><br/>
 			<input type="submit" value="submit"/>	
 		</form>
 		<div id="mapid"></div>
