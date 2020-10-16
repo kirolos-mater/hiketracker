@@ -20,9 +20,9 @@ public class UserService {
 		return o.isPresent() ? o.get() : null;
 	}
 	
-	public boolean checkLogin(String email, String password) {
+	public User checkLogin(String email, String password) {
 		Optional<User> o = userRepository.findByEmailAndPassword(email, password);
-		return o.isPresent()?true:false;
+		return o.isPresent() ? o.get() : null;
 	}
 	
 	@Transactional
