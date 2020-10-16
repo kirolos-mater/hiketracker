@@ -7,6 +7,8 @@
 <title>Hike Tracker</title>
 </head>
 <body>
-	<p>Welcome</p>
+    <p>Welcome</p>
+    <a href="login">LOGIN</a><br>
+    <a href="accountregistration">NEW ACCOUNT</a><br>
 </body>
 </html>
