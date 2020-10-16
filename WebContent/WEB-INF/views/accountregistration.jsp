@@ -15,5 +15,6 @@
  			PASSWORD&nbsp;<input type="password" name="password" value=""/><br>
 			<input type="submit" value="SUBMIT"/>
 		</form>
+		<p>${error}</p>
 </body>
 </html>
