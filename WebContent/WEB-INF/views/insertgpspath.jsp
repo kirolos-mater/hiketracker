@@ -30,6 +30,7 @@
 			Full route&nbsp;<input type="text" name="fullRoute" value=""/><br/>
 			<input type="submit" value="submit"/>	
 		</form>
+		<div id="routefrommodel" style="display: none;" >${route}</div>
 		<div id="mapid"></div>
 		<style>
 			#mapid {
@@ -43,6 +44,25 @@
 			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 				maxZoom: 18,
-			}).addTo(mymap);</script>
+			}).addTo(mymap);
+			
+			function showPolyline() {
+                var puntijs = document.getElementById("routefrommodel").innerHTML;
+            
+                var markers = L.markerClusterGroup();
+                
+                var polyline = L.polyline(puntijs, {color: 'red'}).addTo(map);
+                
+                for (var i = 0; i < puntijs.length; i++) {
+                    /*cluster di marker*/
+                    var puntiMatrice = puntijs[i];
+                    var marker = L.marker(new L.LatLng(puntiMatrice[0], puntiMatrice[1]));
+                    //console.log(marker);
+                    markers.addLayer(marker);
+                }
+                map.addLayer(markers);
+            }
+			
+			</script>
 </body>
 </html>
