@@ -30,6 +30,7 @@
 			Full route&nbsp;<input type="text" name="fullRoute" value=""/><br/>
 			<input type="submit" value="submit"/>	
 		</form>
+		<button type="button" value="SHOW PATH" onclick="showPolyline()">Show polyline</button>
 		<div id="routefrommodel" style="display: none;" >${route}</div>
 		<div id="mapid"></div>
 		<style>
