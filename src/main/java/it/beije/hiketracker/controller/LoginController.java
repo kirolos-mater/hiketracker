@@ -24,14 +24,12 @@ public class LoginController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(HttpServletRequest request, HttpServletResponse response, Model model, Locale locale) {
-		System.out.println("login..." + request.getContextPath());
 		
 		return "login";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(User user,HttpServletRequest request, HttpServletResponse response, Model model, Locale locale) {
-		System.out.println("login..." + request.getContextPath());
 		HttpSession session = request.getSession();
 		String returnPath = "";
 		String email = request.getParameter("email");

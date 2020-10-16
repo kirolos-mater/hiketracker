@@ -18,12 +18,10 @@ public class Route {
 	@Column(name="idRoute")
 	private Integer idRoute;
 	
-	@Column
 	@ManyToOne
 	@JoinColumn(name = "idTransport")
 	private Transport transport;
 	
-	@Column
 	@ManyToOne
 	@JoinColumn(name = "idUser")
 	private User user;

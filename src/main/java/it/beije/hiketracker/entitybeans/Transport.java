@@ -15,7 +15,6 @@ public class Transport {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="idTransport")
-	@OneToMany(mappedBy = "transport")
 	private Integer idTransport;
 	
 	@Column
