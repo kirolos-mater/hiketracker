@@ -32,5 +32,12 @@
 			}
 		</style>
 		<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+		<script>var mymap = L.map('mapid').setView([45.4754304, 9.1881472], 13);
+			var map = mymap;
+			//var OsmLayer = new OpenLayers.Map("Mappa");
+			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+				maxZoom: 18,
+			}).addTo(mymap);</script>
 </body>
 </html>
