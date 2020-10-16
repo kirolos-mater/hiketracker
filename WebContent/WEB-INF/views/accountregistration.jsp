@@ -13,7 +13,7 @@
 			SURNAME&nbsp;<input type="text" name="surname" value="" placeholder="surname"/><br/>
 			EMAIL&nbsp;<input type="email" name="email" value="" placeholder="user@domain.it"/><br/>
  			PASSWORD&nbsp;<input type="password" name="password" value=""/><br>
-			<input type="submit" value="INVIO"/>
+			<input type="submit" value="SUBMIT"/>
 		</form>
 </body>
 </html>

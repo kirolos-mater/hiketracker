@@ -10,7 +10,7 @@
 		<h3>Please fill in the form suggested below</h3>
 		<form action="./login" method="post">
 			GPS PATH&nbsp;<input type="text" name="gpspath" value="" placeholder="path"/><br/>
-			<input type="submit" value="INVIO"/>
+			<input type="submit" value="SUBMIT"/>
 		</form>
 </body>
 </html>

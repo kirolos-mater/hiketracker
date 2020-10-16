@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class AccountRegistrationController {
 	@RequestMapping(value = "/accountregistration", method = RequestMethod.GET)
-	public String login(HttpServletRequest request, HttpServletResponse response, Model model, Locale locale) {
+	public String accountRegistration(HttpServletRequest request, HttpServletResponse response, Model model, Locale locale) {
 		System.out.println("account registration" + request.getContextPath());
 		
 		return "accountregistration";
